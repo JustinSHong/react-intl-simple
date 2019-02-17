@@ -7,7 +7,7 @@ class Day extends Component {
     render() {
         return (
             <div>
-                {/* <Weather /> */}
+                <Weather />
                 <Link to="/">
                     <FormattedMessage
                         id="Day.homeLink"
