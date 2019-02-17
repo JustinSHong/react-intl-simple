@@ -4,10 +4,13 @@ import { IntlProvider, addLocaleData } from "react-intl";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-    <IntlProvider locale={language} messages={messages}>
-        <App />
+    <IntlProvider>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </IntlProvider>,
     document.getElementById("root")
 );
