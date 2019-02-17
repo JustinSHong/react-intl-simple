@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 
 class Home extends Component {
@@ -17,12 +18,12 @@ class Home extends Component {
                         defaultMessage="It's a beautiful day outside."
                     />
                 </p>
-                <p>
+                <Link to="/day">
                     <FormattedMessage
                         id="Home.dayLink"
                         defaultMessage="Click here to find out why!"
                     />
-                </p>
+                </Link>
             </div>
         );
     }
